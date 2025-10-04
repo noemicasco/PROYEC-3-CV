@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Noemí Elizabet Casco</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .header h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .profile-text {
+            text-align: justify;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .job-company {
+            font-style: italic;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .job-period {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .job-description {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-description li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .job-description li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        
+        .skill-category p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        
+        .soft-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .education-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .project {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+        }
+        
+        .project h4 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Noemí Elizabet Casco</h1>
+            <h2>Técnico Superior en Preceptor | Desarrolladora en Formación</h2>
+            <div class="contact-info">
+                <span>📍 Posadas, Misiones, Argentina</span>
+                <span>📧 casconemiprecep@</span>
+                <span>💼 linkedin.com/in/casco-noemi</span>
+                <span>💻 github.com/casco-noemi</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h3 class="section-title">Perfil Profesional</h3>
+                <p class="profile-text">
+                    Profesional de la educación con sólida experiencia en gestión administrativa escolar y habilidades emergentes en desarrollo de software. Destacada capacidad para la comunicación efectiva, coordinación de equipos y desempeño óptimo bajo presión. Comprometida con la innovación educativa y en proceso de transición hacia el sector tecnológico, combinando habilidades interpersonales con competencias técnicas en programación.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Experiencia Profesional</h3>
+                <div class="job">
+                    <div class="job-title">PRECEPTOR</div>
+                    <div class="job-company">B.O.P. N° 8 - Posadas, Argentina</div>
+                    <div class="job-period">Actualidad</div>
+                    <ul class="job-description">
+                        <li>Gestión administrativa de documentación escolar y registros académicos del nivel secundario</li>
+                        <li>Coordinación y supervisión de equipos en entornos educativos de alta demanda</li>
+                        <li>Comunicación efectiva con estudiantes, docentes y familias para resolver situaciones complejas</li>
+                        <li>Manejo de múltiples tareas simultáneas bajo presión, garantizando cumplimiento de plazos</li>
+                        <li>Implementación de procesos organizativos para optimizar la gestión institucional</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Formación Académica</h3>
+                <div class="education-item">
+                    <strong>Técnico Superior en Preceptor</strong><br>
+                    <span style="color: #888;">Educación Superior</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Competencias Técnicas</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Lenguajes de Programación</h4>
+                        <p>JavaScript • Python • Java</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks y Librerías</h4>
+                        <p>Node.js • Django</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Bases de Datos</h4>
+                        <p>PostgreSQL • MongoDB</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Áreas de Conocimiento</h4>
+                        <p>Desarrollo Backend • Gestión de BD • Full Stack</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Proyecto Destacado</h3>
+                <div class="project">
+                    <h4>Sistema para ONG</h4>
+                    <p>Desarrollo de soluciones tecnológicas orientadas al tercer sector, aplicando tecnologías modernas para generar impacto social positivo.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Habilidades Profesionales</h3>
+                <div class="soft-skills">
+                    <span class="skill-tag">Comunicación Efectiva</span>
+                    <span class="skill-tag">Liderazgo</span>
+                    <span class="skill-tag">Trabajo Bajo Presión</span>
+                    <span class="skill-tag">Organización</span>
+                    <span class="skill-tag">Resolución de Problemas</span>
+                    <span class="skill-tag">Adaptabilidad</span>
+                    <span class="skill-tag">Orientación a Resultados</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Idiomas</h3>
+                <p><strong>Inglés:</strong> Nivel Básico</p>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Información Adicional</h3>
+                <p class="profile-text">
+                    Profesional en transición tecnológica, combinando experiencia consolidada en educación con formación autodidacta en desarrollo de software. Busco oportunidades para aplicar mis habilidades técnicas emergentes en proyectos de desarrollo, aportando además mi experiencia en gestión, organización y trabajo en equipo.
+                </p>
+            </div>
+            
+            <div style="text-align: center; color: #888; font-style: italic; margin-top: 30px;">
+                Referencias disponibles a solicitud
+            </div>
+        </div>
+    </div>
+</body>
+</html>
